@@ -3,7 +3,7 @@
 function maxIntArray(arr) {
     let max = Number.MIN_VALUE;
     arr.forEach(num => {
-        if(num > max) {
+        if (num > max) {
             max = num;
         }
     });

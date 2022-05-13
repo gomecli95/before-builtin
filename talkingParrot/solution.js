@@ -2,10 +2,10 @@
 
 function talkingParrot(hour, isParrotTalking) {
     let result;
-    if(hour > 23 || hour <0 ) {
+    if (hour > 23 || hour <0 ) {
         result = "Wrong Input!";
     } else {
-        if((hour > 20 || hour < 7) && isParrotTalking) {
+        if ((hour > 20 || hour < 7) && isParrotTalking) {
             result = true;
         } else {
             result = false;
