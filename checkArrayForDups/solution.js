@@ -1,13 +1,16 @@
 // Your solution here
 
-// Given an integer array nums, return `true` if
-// any value appears at least **twice** in the array,
-// and return `false` if every element is distinct.
-
-// Example 1: `Input: nums = [1,2,3,1] Output: true`
-
 function checkArrayForDups(nums) {
-    nums.forEach(num => {
-
-    });
+    let result = false;
+    for (let i = 0; i < nums.length; i++) {
+        const element = nums[i];
+        for (let j = i + 1; j < nums.length; j++) {
+            if (element === nums[j]) {
+                result = true;
+            }
+        }
+    }
+    return result;
 }
+
+console.log(checkArrayForDups([1,2,3,1]));
