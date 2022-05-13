@@ -1,7 +1,7 @@
 // Your solution here
 
 function firstUniqueCharacter(str) {
-    let arr = str.split("");
+    const arr = str.split("");
     for (let i = 0; i < arr.length; i++) {
         let repeat = 0;
         for (let j = 0; j < arr.length; j++) {

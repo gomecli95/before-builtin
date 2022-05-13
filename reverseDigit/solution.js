@@ -1,7 +1,7 @@
 // Your solution here
 
 function reverseDigit(num) {
-    let digs = num.toString().split("");
+    const digs = num.toString().split("");
     let reversed = "";
     for (let i = digs.length - 1; i >= 0; i--) {
         reversed += digs[i];
